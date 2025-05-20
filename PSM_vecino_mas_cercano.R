@@ -28,9 +28,3 @@ love.plot(modelo, binary = "std", thresholds = c(m = 0.1))
 # Paso 4: Generar base emparejada
 # -------------------------
 base_emparejada <- match.data(modelo)
-
-# -------------------------
-# Paso 5: Analizar el efecto del tratamiento
-# -------------------------
-# Cambia "resultado" por tu variable de interés (ingreso, satisfacción, empleo, etc.)
-t.test(resultado ~ tratamiento, data = base_emparejada)
